@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>browser-extension-manager</title>
+  </head>
+  <body data-theme="light">
+    <header class="header flex flex--between-center">
+      <img
+        class="header__logo"
+        src="./assets/images/logo.svg"
+        alt="Browser Extension Manager logo"
+      />
+      <button class="light-dark-toggle" type="button" aria-label="Toggle theme">
+        <img src="./assets/images/icon-moon.svg" alt="Toggle theme icon" />
+      </button>
+    </header>
+    <main class="main flex">
+      <section class="extensions-header flex flex--between-center">
+        <h2 class="extensions-header__title">Extensions List</h2>
+        <div
+          class="extensions-header__actions"
+          role="group"
+          aria-label="Filter extensions"
+        >
+          <button class="button button--active" id="filter-all">All</button>
+          <button class="button" id="filter-active">Active</button>
+          <button class="button" id="filter-inactive">Inactive</button>
+        </div>
+      </section>
+      <section class="extensions-grid">
+        <!-- Extension Card Mockup 
+        <article class="extension-card flex">
+          <header class="extension-card__header flex">
+            <figure class="extension-card__figure">
+              <img src="./assets/images/logo-devlens.svg" alt="logo" />
+            </figure>
+            <div class="extension-card__content">
+              <h3 class="extension-card__title">DevLens</h3>
+              <p class="extension-card__description">
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+          </header>
+          <footer class="extension-card__footer flex flex--between-center">
+            <button class="button button--remove" type="button">Remove</button>
+            <label class="toggle" aria-label="Toggle option">
+              <input class="toggle__input" type="checkbox" />
+              <span class="toggle__track" aria-hidden="true"></span>
+            </label>
+          </footer>
+        </article>
+        -->
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
