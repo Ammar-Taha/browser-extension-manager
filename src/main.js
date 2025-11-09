@@ -1,4 +1,6 @@
 import "./index.css";
+import iconMoon from "./assets/images/icon-moon.svg";
+import iconSun from "./assets/images/icon-sun.svg";
 import extensionsData from "./data.js";
 
 // ---------------------------------------------------------------------------
@@ -208,10 +210,7 @@ function applyTheme(theme) {
   temporarilyDisableThemeTransitions();
   document.body.dataset.theme = theme;
 
-  const iconSrc =
-    theme === "dark"
-      ? "./assets/images/icon-sun.svg"
-      : "./assets/images/icon-moon.svg";
+  const iconSrc = theme === "dark" ? iconSun : iconMoon;
   const iconAlt =
     theme === "dark" ? "Switch to light theme" : "Switch to dark theme";
 
