@@ -1,6 +1,6 @@
 import "./index.css";
-import iconMoon from "./assets/images/icon-moon.svg";
-import iconSun from "./assets/images/icon-sun.svg";
+import iconMoon from "../assets/images/icon-moon.svg";
+import iconSun from "../assets/images/icon-sun.svg";
 import extensionsData from "./data.js";
 
 // ---------------------------------------------------------------------------

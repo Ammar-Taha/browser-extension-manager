@@ -97,7 +97,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] .header__logo {
-  content: url("./assets/images/logo-dark.svg");
+  content: url("../assets/images/logo-dark.svg");
 }
 
 body[data-theme="dark"] .light-dark-toggle {
